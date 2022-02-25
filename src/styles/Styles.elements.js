@@ -87,6 +87,18 @@ export const Select = styled.select`
   height: 30px;
 `
 
+export const ContainerButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 750px;
+  height: auto;
+
+  margin-bottom: 10px;
+`
+
 export const Button = styled.button`
   width: 90%;
   height: 30px;
@@ -100,10 +112,36 @@ export const Button = styled.button`
   
   cursor: pointer;
 
+  margin-bottom: 10px;
+
   &:hover {
     background: #5D8BF4;
   }
 `
+
+export const MassageExito = styled.p`
+  margin-top: 20px;
+  color: #084594;
+  font-weight: bold;
+`
+
+// export const ButtonClear = styled.button`
+//   width: 90%;
+//   height: 30px;
+
+//   background: #5D8BF4;
+//   color: #fff;
+//   font-weight: bold;
+
+//   border: 1px solid #000000;
+//   border-radius: 2px;
+  
+//   cursor: pointer;
+
+//   &:hover {
+//     background: #084594;
+//   }
+// `
 
 // LIST --------------------------------------
 export const ContainerList = styled.section`

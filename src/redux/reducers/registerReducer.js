@@ -1,7 +1,13 @@
 import { types } from '../types/types';
 
 const initialState = {
-    items: []
+    items: [],
+    updateItem: {
+        nombre: "",
+        apellido: "",
+        ciudad: "",
+        fecha: "",
+    }
 }
 
 export const registerReducer = (state = initialState, action) => {
@@ -19,6 +25,12 @@ export const registerReducer = (state = initialState, action) => {
         case types.delete:
             return {
                 items: state.items.filter(item => item.id!== action.payload)
+            }
+        
+        case types.update:
+            return {
+                ...state,
+                updateItem: action.payload
             }
     
         default:

@@ -20,3 +20,13 @@ export const deleteSync = (id) => {
         payload: id
     }
 }
+
+export const updateSync = (id, item) =>{
+    return{
+        type: types.update,
+        payload:{
+            id,
+            ...item
+        }
+    }
+}

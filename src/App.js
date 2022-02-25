@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './components/Footer';
+// import Form from './components/Form';
 import Form from './components/Form';
-import List from './components/List';
 import NavBar from './components/NavBar';
 import { ContainerApp, ContainerFormList } from './styles/Styles.elements';
 
@@ -14,7 +14,6 @@ const App = () => {
       <ContainerFormList>
         <h1>Registro de personas</h1>
         <Form />
-        <List />
       </ContainerFormList>
 
       <Footer />

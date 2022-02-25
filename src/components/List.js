@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteSync } from '../redux/actions/registerAction';
 import { ContainerList, Table } from '../styles/Styles.elements';
-import { Modal, ModalBody, ModalFooter, Button  } from 'reactstrap';
+import {
+    // Modal,
+    // ModalBody,
+    // ModalFooter,
+    Button
+} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const List = () => {
+const List = ({ handleUpdate }) => {
 
     const dispatch = useDispatch();
 
@@ -14,13 +19,13 @@ const List = () => {
     }
 
     const { items } = useSelector(store => store.items)
-    console.log(items);
+    //console.log(items);
 
     // Modal open state
-    const [modal, setModal] = useState(false);
+    // const [modal, setModal] = useState(false);
   
     // Toggle for Modal
-    const toggle = () => setModal(!modal);
+    // const toggle = () => setModal(!modal);
 
     return (
         <ContainerList>
@@ -50,6 +55,7 @@ const List = () => {
                                         <Button
                                             color="primary"
                                             type="submit"
+                                            onClick={() => handleUpdate(item)}
                                         >
                                             Actualizar
                                         </Button>
@@ -57,14 +63,14 @@ const List = () => {
                                         <Button
                                             color="danger"
                                             type="submit"
-                                            // onClick={() => deleteItem(item.id)}
-                                            onClick={toggle}
+                                            onClick={() => deleteItem(item.id)}
+                                            // onClick={toggle}
                                         >
                                             Eliminar
                                         </Button>
                                     </td>
 
-                                    <td>
+                                    {/* <td>
                                         <Modal isOpen={modal} toggle={toggle}>
                                             <ModalBody>
                                                 Está seguro de eliminar este registro?
@@ -87,14 +93,12 @@ const List = () => {
                                                 </Button>
                                             </ModalFooter>
                                         </Modal>
-                                    </td>
+                                    </td> */}
                                 </tr>
                             ))
                         }
                     </tbody>
                 </Table>
-
-                
 
             </div>
         </ContainerList>
