@@ -31,6 +31,8 @@ Para la creación del proyecto se utilizaron las siguientes herramientas de desa
 * ```formik```
 * ```yup```
 * ```uuid```
+* ```reactstrap```
+* ```bootstrap```
 * ```styled-components```
 
 ## 🔥 Descarga del proyecto e Instalación
@@ -42,7 +44,7 @@ Para la creación del proyecto se utilizaron las siguientes herramientas de desa
 * Para levantar el servidor local se debe correr el comando ```npm start```
 
 ## 🔍 Vista 
-![vista](https://user-images.githubusercontent.com/88461234/155644866-24b85164-fae5-4ade-b5eb-d72ae30fb5bf.png)
+![vista](https://user-images.githubusercontent.com/88461234/155657062-2aa47a1c-aa9b-4c97-9cd3-0e2c721191c6.png)
 
 ## 🌟 Autor
 
