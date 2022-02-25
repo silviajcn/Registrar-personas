@@ -62,15 +62,15 @@ const Form = () => {
     // UPDATE ---------------------------------------------------
     const [updateForm, setUpdateForm] = useState(false);
 
-    const [values, setValues] = useState();
+    // const [values, setValues] = useState();
 
     const handleUpdate = (item) => {
         console.log(item)
         dispatch(updateSync(item.id, item))
         setUpdateForm(true)
-        setValues({
-            ...item
-        })
+        // setValues({
+        //     ...item
+        // })
     }
 
     return (
@@ -136,19 +136,32 @@ const Form = () => {
                 </ContainerInputs>
 
                 <ContainerButton>
+                    {
+                        !updateForm
+                            ?
+                        <>
+                            <Button
+                                type="submit"
+                            >
+                                Guardar
+                            </Button>
+                            {formRegister && <MassageExito>¡Registro exitoso!</MassageExito>}
+                        </>
+                            :
                     <Button
                         type="submit"
                     >
                         Guardar
                     </Button>
 
-                    {formRegister && <MassageExito>¡Registro exitoso!</MassageExito>}
+                    
 
-                    {/* <ButtonClear
-                        type="reset"
-                    >
-                        Limpiar formulario
-                    </ButtonClear> */}
+                    // {/* <ButtonClear
+                    //     type="reset"
+                    // >
+                    //     Limpiar formulario
+                    // </ButtonClear> */}
+                    }
                 </ContainerButton>
             </form>
 
