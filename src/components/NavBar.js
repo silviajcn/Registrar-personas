@@ -4,7 +4,7 @@ import { ContainerNavBar, Logo } from '../styles/Styles.elements';
 const NavBar = () => {
     return (
         <ContainerNavBar>
-            <Logo>Registro</Logo>
+            <Logo>register.com</Logo>
         </ContainerNavBar>
     )
 };

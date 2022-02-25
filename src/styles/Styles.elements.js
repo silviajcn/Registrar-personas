@@ -74,20 +74,26 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   width: 400px;
-  height: 20px;
+  height: 30px;
+`
+
+export const InputDate = styled.input`
+  width: 400px;
+  height: 30px;
 `
 
 export const Select = styled.select`
-  width: 410px;
-  height: 28px;
+  width: 400px;
+  height: 30px;
 `
 
 export const Button = styled.button`
   width: 90%;
   height: 30px;
 
-  background: #5D8BF4;
+  background: #084594;
   color: #fff;
+  font-weight: bold;
 
   border: 1px solid #000000;
   border-radius: 2px;
@@ -95,7 +101,7 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: #084594;
+    background: #5D8BF4;
   }
 `
 
@@ -120,45 +126,6 @@ export const Table = styled.table`
   text-align: center;
 `
 
-export const BtnEdit = styled.button`
-  width: 80px;
-  height: 25px;
-
-  background: #86C6F4;
-  color: #000000;
-
-  border: 1px solid #000000;
-  border-radius: 2px;
-  
-  cursor: pointer;
-  margin-right: 5px;
-  font-weight: bold;
-
-  &:hover {
-    color: #fff;
-    background: #084594;
-  }
-`
-
-export const BtnDelete = styled.button`
-  width: 70px;
-  height: 25px;
-
-  background: #FF7272;
-  color: #000000;
-
-  border: 1px solid #000000;
-  border-radius: 2px;
-  font-weight: bold;
-  
-  cursor: pointer;
-
-  &:hover {
-    color: #fff;
-    background: #D82148;
-  }
-`
-
 // FOOTER ------------------------------------
 export const ContainerPrincipal = styled.footer`
   display: flex;
@@ -173,7 +140,9 @@ export const ContainerPrincipal = styled.footer`
   height: auto;
 `
 
-export const Credits = styled.small`
+export const Credits = styled.a`
   color: #818181;
   font-size: 18px;
+
+  text-decoration: none;
 `

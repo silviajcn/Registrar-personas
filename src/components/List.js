@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteSync } from '../redux/actions/registerAction';
-import { ContainerList, Table, BtnEdit, BtnDelete } from '../styles/Styles.elements';
+import { ContainerList, Table } from '../styles/Styles.elements';
+import { Modal, ModalBody, ModalFooter, Button  } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const List = () => {
 
@@ -13,6 +15,12 @@ const List = () => {
 
     const { items } = useSelector(store => store.items)
     console.log(items);
+
+    // Modal open state
+    const [modal, setModal] = useState(false);
+  
+    // Toggle for Modal
+    const toggle = () => setModal(!modal);
 
     return (
         <ContainerList>
@@ -39,24 +47,55 @@ const List = () => {
                                     <td>{item.fecha}</td>
                                     <td>{item.ciudad}</td>
                                     <td>
-                                        <BtnEdit
+                                        <Button
+                                            color="primary"
                                             type="submit"
                                         >
                                             Actualizar
-                                        </BtnEdit>
+                                        </Button>
 
-                                        <BtnDelete
+                                        <Button
+                                            color="danger"
                                             type="submit"
-                                            onClick={() => deleteItem(item.id)}
+                                            // onClick={() => deleteItem(item.id)}
+                                            onClick={toggle}
                                         >
                                             Eliminar
-                                        </BtnDelete>
+                                        </Button>
+                                    </td>
+
+                                    <td>
+                                        <Modal isOpen={modal} toggle={toggle}>
+                                            <ModalBody>
+                                                Está seguro de eliminar este registro?
+                                            </ModalBody>
+                                            <ModalFooter>
+                                                <Button
+                                                    color="danger"
+                                                        onClick={() => {
+                                                        deleteItem(item.id)
+                                                        toggle()
+                                                    }}
+                                                >
+                                                    Sí
+                                                </Button>
+                                                <Button
+                                                    color="primary"
+                                                    onClick={toggle}
+                                                >
+                                                    No
+                                                </Button>
+                                            </ModalFooter>
+                                        </Modal>
                                     </td>
                                 </tr>
                             ))
                         }
                     </tbody>
                 </Table>
+
+                
+
             </div>
         </ContainerList>
     )

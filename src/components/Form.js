@@ -4,7 +4,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { v4 as uuidva } from 'uuid';
 import { registerSync } from '../redux/actions/registerAction';
-import { ContainerInputs, Label, Input, Select, Button } from '../styles/Styles.elements';
+import { ContainerInputs, Label, Input, InputDate, Select, Button } from '../styles/Styles.elements';
 
 const Form = () => {
 
@@ -89,7 +89,7 @@ const Form = () => {
 
                 <ContainerInputs>
                     <Label>Fecha de nacimiento:</Label>
-                    <Input
+                    <InputDate
                         id="fecha"
                         name="fecha"
                         type="date"

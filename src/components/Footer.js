@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <ContainerPrincipal>
-            <Credits>© 2022, register.com By Silvi.</Credits>
+            <Credits href="https://mi-portafolio-personal.vercel.app/" target="_blank" rel="noreferrer">© 2022, register.com By Silvi.</Credits>
         </ContainerPrincipal>
     )
 }
