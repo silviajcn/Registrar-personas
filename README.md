@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# 📚 Registro de personas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En la página de Registro de personas se puede:
+* Registrar personas
+* Listar las personas registradas.
+* Editar los datos de las personas registradas.
+* Eliminar las personas registradas.
 
-## Available Scripts
+## 📌 Requisitos del proyecto:
 
-In the project directory, you can run:
+* Una página donde se permita la creación, edición y eliminación de registros.
+* Puede ser en JavaScript puro o React (No requiere desarrollo de Backend o base de datos).
+* Se debe permitir registrar nombre, apellido, ciudad y fecha de nacimiento.
+* Se debe permitir validar que la fecha de nacimiento sea menor al año 2.000 y todos los campos estén diligenciados.
+* Se debe permitir seleccionar la ciudad de una lista desplegable. (La lista debe contener al menos 5 elementos).
+* Al hacer clic en el botón guardar, los datos del formulario de deben mostrar en la tabla de abajo y limpiar los campos de la parte superior.
+* Desde la tabla se deben permitir eliminar o actualizar registros.
+* Al eliminar un registro debe solicitar confirmación al usuario.
 
-### `npm start`
+## 💻 Para visitar la pagina de Registro de personas, igresa al siguiente link:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 
+    
+## 💎 Proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para la creación del proyecto se utilizaron las siguientes herramientas de desarrollo:
 
-### `npm test`
+* ```react```
+* ```react-redux```
+* ```redux```
+* ```formik```
+* ```yup```
+* ```uuid```
+* ```styled-components```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔥 Descarga del proyecto e Instalación
 
-### `npm run build`
+* Clonar el repositorio
+* Abrir el proyecto en Visual Studio Code (o editor de confianza)
+* Abrir la terminal del editor
+* Correr el comando ```npm install``` para instalar correctamente las dependencias del proyecto
+* Para levantar el servidor local se debe correr el comando ```npm start```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔍 Vista 
+![vista](https://user-images.githubusercontent.com/88461234/155644866-24b85164-fae5-4ade-b5eb-d72ae30fb5bf.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌟 Autor
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Silvia C. Navarro**  - [@silviajcn](https://github.com/silviajcn)
