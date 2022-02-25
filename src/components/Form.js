@@ -93,6 +93,8 @@ const Form = () => {
                         id="fecha"
                         name="fecha"
                         type="date"
+                        min="1900-01-01"
+                        max="1999-12-31"
                         onChange={formik.handleChange}
                     />
                 </ContainerInputs>
