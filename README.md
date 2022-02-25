@@ -1,9 +1,8 @@
 # 📚 Registro de personas
 
 En la página de Registro de personas se puede:
-* Registrar personas
+* Registrar personas en el localStorage
 * Listar las personas registradas.
-* Editar los datos de las personas registradas.
 * Eliminar las personas registradas.
 
 ## 📌 Requisitos del proyecto:
